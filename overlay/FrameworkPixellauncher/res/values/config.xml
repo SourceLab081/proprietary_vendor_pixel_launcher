@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The package name for the system's content suggestions service.
+         Provides suggestions for text and image selection regions in snapshots of apps and should
+         be able to classify the type of entities in those selections.
+
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         If no service with the specified name exists on the device, content suggestions wil be
+         disabled.
+         Example: "com.android.contentsuggestions/.ContentSuggestionsService"
+    -->
+    <string name="config_defaultContentSuggestionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
+
+    <!-- Colon separated list of package names that should be granted Notification Listener access -->
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.projection.gearhead</string>
+
+    <!-- The package name for the system's search ui service.
+         This service returns search results when provided with an input string.
+
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         If no service with the specified name exists on the device, on device search wil be
+         disabled.
+         Example: "com.android.intelliegence/.SearchUiService"
+    -->
+    <string name="config_defaultSearchUiService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSearchUiService</string>
+
+     <!-- The package name for the system's smartspace service.
+          This service returns smartspace results.
+
+          This service must be trusted, as it can be activated without explicit consent of the user.
+          If no service with the specified name exists on the device, smartspace will be disabled.
+          Example: "com.android.intelligence/.SmartspaceService"
+     -->
+    <string name="config_defaultSmartspaceService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService</string>
+
+    <!-- Component name for the activity that will be presenting the Recents UI, which will receive
+         special permissions for API related to fetching and presenting recent tasks. The default
+         configuration uses Launcehr3QuickStep as default launcher and points to the corresponding
+         recents component. When using a different default launcher, change this appropriately or
+         use the default systemui implementation: com.android.systemui/.recents.RecentsActivity -->
+    <string name="config_recentsComponentName" translatable="false">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
+
+    <!-- This is the default launcher package with an activity to use on secondary displays that
+         support system decorations.
+         This launcher package must have an activity that supports multiple instances and has
+         corresponding launch mode set in AndroidManifest.
+         {@see android.view.Display#FLAG_SHOULD_SHOW_SYSTEM_DECORATIONS} -->
+    <string name="config_secondaryHomePackage" translatable="false">com.google.android.apps.nexuslauncher</string>
+</resources>

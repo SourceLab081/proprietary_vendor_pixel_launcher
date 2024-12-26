@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- Pixel Launcher can bind to the open-source network component. -->
+    <allow-association target="com.google.android.as.oss" allowed="com.google.android.apps.nexuslauncher" />
+</config>
