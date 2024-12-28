@@ -8,6 +8,19 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "WeatherPixelPrebuilt_24D1",
+	owner: "pixel_launcher",
+	apk: "proprietary/product/priv-app/WeatherPixelPrebuilt_24D1/WeatherPixelPrebuilt_24D1.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "NexusLauncherRelease",
 	owner: "pixel_launcher",
 	apk: "proprietary/system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk",

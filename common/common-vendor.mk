@@ -5,6 +5,9 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/pixel_launcher/common
 
+PRODUCT_COPY_FILES += \
+    vendor/pixel_launcher/common/proprietary/system_ext/etc/default-permissions/default-permissions_pixelweather.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions_pixelweather.xml
 
 PRODUCT_PACKAGES += \
+    WeatherPixelPrebuilt_24D1 \
     NexusLauncherRelease
