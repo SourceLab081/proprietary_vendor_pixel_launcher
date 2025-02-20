@@ -10,13 +10,13 @@ set -e
 
 DEVICE=common
 DEVICE_COMMON=common
-VENDOR=pixel_launcher
+VENDOR=pixel/launcher
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ANDROID_ROOT="${MY_DIR}/../.."
+ANDROID_ROOT="${MY_DIR}/../../.."
 
 HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
@@ -30,7 +30,7 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
 write_headers "true" "WITH_GMS"
-sed -i "s/device\/${VENDOR}\/${DEVICE_COMMON}\/setup-makefiles.sh/vendor\/${VENDOR}\/setup-makefiles.sh/g" "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
+sed -i "s/device\/${VENDOR//\//\\/}\/${DEVICE_COMMON}\/setup-makefiles.sh/vendor\/${VENDOR//\//\\/}\/setup-makefiles.sh/g" "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
