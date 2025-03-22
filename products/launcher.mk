@@ -12,7 +12,8 @@ $(call inherit-product, vendor/pixel/launcher/common/common-vendor.mk)
 # Overlay
 PRODUCT_PACKAGES += \
 	FrameworkPixellauncher \
-	PixelLauncherOverlay
+	PixelLauncherOverlay \
+	SystemUIPixellauncher
 
 PRODUCT_COPY_FILES += \
     vendor/pixel/launcher/prebuilt/etc/pixel_launcher.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_launcher.xml \
