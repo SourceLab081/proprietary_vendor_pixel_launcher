@@ -34,5 +34,11 @@ sed -i "s/device\/${VENDOR//\//\\/}\/${DEVICE_COMMON}\/setup-makefiles.sh/vendor
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
+printf '\n%s\n' 'ifeq ($(USE_TABLET_BT_COD),true)' >> "$PRODUCTMK"
+
+write_makefiles "${MY_DIR}/proprietary-files_tablet.txt" true
+
+printf '%s\n' 'endif' >> "$PRODUCTMK"
+
 # Finish
 write_footers

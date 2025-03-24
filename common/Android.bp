@@ -34,3 +34,17 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+android_app_import {
+	name: "NexusLauncherReleaseTablet",
+	owner: "pixel/launcher",
+	apk: "proprietary/system_ext/priv-app/NexusLauncherRelease/NexusLauncherReleaseTablet.apk",
+	overrides: ["Launcher3", "Launcher3QuickStep", "TrebuchetQuickStep", "NexusLauncherRelease"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+

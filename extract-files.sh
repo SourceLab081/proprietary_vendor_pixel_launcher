@@ -32,6 +32,10 @@ SECTION=
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
+        --only-tablet )
+                ONLY_TABLET=true
+                CLEAN_VENDOR=false
+                ;;
         -n | --no-cleanup )
                 CLEAN_VENDOR=false
                 ;;
@@ -61,6 +65,10 @@ function blob_fixup() {
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
-extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+if [ "${ONLY_TABLET}" = true ]; then
+    extract "${MY_DIR}/proprietary-files_tablet.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+else
+    extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+fi
 
 "${MY_DIR}/setup-makefiles.sh"
