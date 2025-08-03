@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
     WeatherPixelPrebuilt_24D1 \
     NexusLauncherRelease
 
-ifeq ($(USE_TABLET_BT_COD),true)
+ifeq ($(TARGET_IS_TABLET),true)
 
 PRODUCT_PACKAGES += \
     NexusLauncherReleaseTablet
