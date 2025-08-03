@@ -1,4 +1,4 @@
-# Extracted from tangorpro-ota-bp1a.250505.005-a5bf2935.zip
+# Extracted from tangorpro-ota-bp2a.250705.008
 
 # Launcher
 system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk:system_ext/priv-app/NexusLauncherRelease/NexusLauncherReleaseTablet.apk;apkOVERRIDES=Launcher3,Launcher3QuickStep,TrebuchetQuickStep,NexusLauncherRelease;PRESIGNED

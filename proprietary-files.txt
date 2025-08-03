@@ -1,8 +1,8 @@
-# Extracted from caiman-ota-bp1a.250505.005-fa38a01c.zip
+# Extracted from caiman-ota-bp2a.250705.008
 
 # Launcher
 system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk;apkOVERRIDES=Launcher3,Launcher3QuickStep,TrebuchetQuickStep;PRESIGNED
 
 # Weather
-product/priv-app/WeatherPixelPrebuilt_24D1/WeatherPixelPrebuilt_24D1.apk;PRESIGNED
+product/priv-app/WeatherPixelPrebuilt_10004303/WeatherPixelPrebuilt_10004303.apk;PRESIGNED
 system_ext/etc/default-permissions/default-permissions_pixelweather.xml

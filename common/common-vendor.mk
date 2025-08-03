@@ -9,7 +9,7 @@ PRODUCT_COPY_FILES += \
     vendor/pixel/launcher/common/proprietary/system_ext/etc/default-permissions/default-permissions_pixelweather.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions_pixelweather.xml
 
 PRODUCT_PACKAGES += \
-    WeatherPixelPrebuilt_24D1 \
+    WeatherPixelPrebuilt_10004303 \
     NexusLauncherRelease
 
 ifeq ($(TARGET_IS_TABLET),true)
