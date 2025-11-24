@@ -8,9 +8,9 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "WeatherPixelPrebuilt_10004303",
+	name: "WeatherPixelPrebuilt_10006113",
 	owner: "pixel/launcher",
-	apk: "proprietary/product/priv-app/WeatherPixelPrebuilt_10004303/WeatherPixelPrebuilt_10004303.apk",
+	apk: "proprietary/product/priv-app/WeatherPixelPrebuilt_10006113/WeatherPixelPrebuilt_10006113.apk",
 	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
