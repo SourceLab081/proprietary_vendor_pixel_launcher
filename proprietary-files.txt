@@ -1,4 +1,4 @@
-# Extracted from caiman-ota-bp3a.251105.015
+# Extracted from caiman-ota-bp4a.251205.006
 
 # Launcher
 system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk;apkOVERRIDES=Launcher3,Launcher3QuickStep,TrebuchetQuickStep;PRESIGNED
