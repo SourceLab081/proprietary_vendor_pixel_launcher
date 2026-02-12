@@ -15,6 +15,11 @@ PRODUCT_PACKAGES += \
 	PixelLauncherOverlay \
 	SystemUIPixellauncher
 
+ifneq ($(TARGET_IS_TABLET),true)
+PRODUCT_PACKAGES += \
+	FrameworkPixellauncherPhoneDimen
+endif
+
 PRODUCT_COPY_FILES += \
     vendor/pixel/launcher/prebuilt/etc/pixel_launcher.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_launcher.xml \
     vendor/pixel/launcher/prebuilt/etc/preinstalled-packages-product-pixel_launcher.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel_launcher.xml \
