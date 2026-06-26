@@ -12,6 +12,7 @@ $(call inherit-product, vendor/pixel/launcher/common/common-vendor.mk)
 # Overlay
 PRODUCT_PACKAGES += \
 	FrameworkPixellauncher \
+	PixelLauncherNoGestureHintOverlay \
 	PixelLauncherOverlay \
 	SystemUIPixellauncher
 
