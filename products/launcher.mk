@@ -14,6 +14,7 @@ PRODUCT_PACKAGES += \
 	FrameworkPixellauncher \
 	PixelLauncherNoGestureHintOverlay \
 	PixelLauncherOverlay \
+	PixelLauncherOverlayCustom \
 	SystemUIPixellauncher
 
 ifneq ($(TARGET_IS_TABLET),true)
